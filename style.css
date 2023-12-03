@@ -1,0 +1,119 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #333;
+
+}
+#search-button{
+    padding: 10px 20px;
+    background-color: #138605;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+#search-button:hover{
+    background-color: blueviolet;
+    color: black;
+}
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+}
+.search-result img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8;
+}
+.search-result a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+a:hover{
+    color: blueviolet;
+}
+#show-more-button{
+    
+    padding: 10px 20px;
+    background-color: #138605;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin : 30px auto;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    display: none;
+}
+#show-more-button:hover{
+    background-color: rgb(113, 230, 10);
+    color: black;
+}
+
+/* Mobile devices: 320–480 pixels
+Tablets and iPads: 481–768 pixels
+Small screens and laptops: 769–1024 pixels
+Desktops and large screens: 1025–1200 pixels
+Extra large screens and TVs: 1201 pixels  */
+@media screen and (max-width:768px) {
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .search-result{
+        width: 100%;
+    }
+}
